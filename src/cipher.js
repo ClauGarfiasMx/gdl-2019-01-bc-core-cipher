@@ -1,39 +1,29 @@
 
 
 const encode = (offset,string) => {
+	const stringCiphered = []; //array para almacenar los caracteres cifrados
 	
 	for (var i = 0; i < string.length; i++) { //contador para obtener cada letra del string
 		let character = string.charCodeAt(i); // cada letra del string en código ASCII
-			//console.log(character);
-		let characterCiphered = (character - 65 + offsetCipher) % 26 + 65; //cifra cada letra del string usando el offset dado por el usuario y devuelve su código ASCII
-			//console.log(characterCiphered);
-		stringCiphered.push(String.fromCharCode(characterCiphered)); //array del texto cifrado en ASCII
-
-		let output= stringCiphered.join(''); //une el array para que se vea como un texto 
-			//console.log(output); //imprime el resultado en la consola, para poderlo enviar al html
-		document.getElementById('resultEncrypt').innerHTML = output; //envía el resultado al p element resulEncrypt
-
-		
+		let characterCiphered = (character - 65 + offset) % 26 + 65; //cifra cada letra del string usando el offset dado por el usuario y devuelve su código ASCII
+		 
+		stringCiphered.push(String.fromCharCode(characterCiphered)); // envía al array los caracteres cifrados en ASCII
 	}
+	const output = stringCiphered.join(''); //une los caracteres del array y los almacena en output
 	return output;
 }
 
 
 const decode = (offset,string) => {
+	const stringDeciphered = []; //array para almacenar los caracteres cifrados
 	
 	for (var i = 0; i < string.length; i++) { //contador para obtener cada letra del string
-		let characterDe = string.charCodeAt(i); // cada letra del string en código ASCII
-			//console.log(characterDe); // caracter que se va a descifrar en codigo ASCII
-		let characterDeciphered = (characterDe + 65 - offsetDecipher) % 26 + 65; //cifra cada letra del string usando el offset dado por el usuario y devuelve su código ASCII
-			//console.log(characterDeciphered); // log del caracter descifrado
-		stringDeciphered.push(String.fromCharCode(characterDeciphered)); //array del texto cifrado en ASCII
-		let outputDe= stringDeciphered.join(''); //une el array para que se vea como un texto 
-			//console.log(outputDe); //imprime el resultado en la consola, para poderlo enviar al html
-		document.getElementById('resultDecrypt').innerHTML = outputDe; //envía el resultado al p element resulEncrypt
-		
-		
+		let character = string.charCodeAt(i); // cada letra del string en código ASCII
+		let characterDeciphered = (character + 65 - offset) % 26 + 65; //cifra cada letra del string usando el offset dado por el usuario y devuelve su código ASCII
+		stringDeciphered.push(String.fromCharCode(characterDeciphered)); // envía al array los caracteres cifrados en ASCII
 	}
-	return outputDe;
+	const output = stringDeciphered.join(''); //une los caracteres del array y los almacena en output
+	return output;
 }
 
 

@@ -29,7 +29,7 @@
         <input type="text" id="messageEncrypt" class="message-input"><!--string que se va a descifrar--->
         <p>Type the key</p>
         <input id="keyEncrypt" class="key">
-        <button id="encryptButton" onclick="encode()">Encrypt</button>
+        <button id="encryptButton" onclick="encodeBttn()">Encrypt</button>
       </section>
 
       <section id="decryptScreen" class="screen"> <!-- contenedor de pantalla 2-2 DECRYPT --->
@@ -38,7 +38,7 @@
         <input type="text" id="keyDecrypt" class="key">
         <p>Type or paste your message</p>
         <input id="messageDecrypt" class="message-input">
-        <button id="decryptButton">Decrypt</button>
+        <button id="decryptButton" onclick="decodeBttn()">Decrypt</button>
       </section>
 
       <section id="outputScreen" class="screen" style="background-color: #eff1f2"> <!-- contenedor de pantalla 3 RESULT --->
