@@ -6,8 +6,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
     <div id="root">
-      <h1>Hola mundo!</h1>
+
+      <!--COMIENZA EL CÓDIGO DE CLAUDIA--->
+      <div id="container" class="container">
+    
+      <header id="logo-box" class="logo-box"> <!-- contenedor del logotipo --->
+        <h1 id="title" class="title">EnkryptApp</h1><p style="margin-top: 0;">V 0.1</p>
+      </header>
+
+      <section id="chooseScreen" class="screen"> <!-- contenedor de pantalla 1 CHOOSE --->
+        <p class="site-description">EnkryptApp allows you to easily code and decode your private messages</p>
+        <p class="title2">I want to:</p>
+        <button id="chooseEncrypt">encrypt</button> <!---boton de encriptar que oculta pantalla 1 y pasa a pantalla 2-->
+        <button id="chooseDecrypt">decrypt</button>
+      </section>
+
+      <section id="encryptScreen" class="screen" style="background-color: #eff1f2"> <!-- contenedor de pantalla 2-1 ENCRYPT --->
+        <p class="title2">Encrypting...</p>
+        <p>Type or paste your message</p>
+        <input type="text" id="messageEncrypt" class="message-input"><!--string que se va a descifrar--->
+        <p>Type the key</p>
+        <input id="keyEncrypt" class="key">
+        <button id="encryptButton" onclick="encode()">Encrypt</button>
+      </section>
+
+      <section id="decryptScreen" class="screen"> <!-- contenedor de pantalla 2-2 DECRYPT --->
+        <p class="title2">Decrypting...</p>
+        <p>Type the key</p>
+        <input type="text" id="keyDecrypt" class="key">
+        <p>Type or paste your message</p>
+        <input id="messageDecrypt" class="message-input">
+        <button id="decryptButton">Decrypt</button>
+      </section>
+
+      <section id="outputScreen" class="screen" style="background-color: #eff1f2"> <!-- contenedor de pantalla 3 RESULT --->
+        <div><p>El resultado es:</p>
+        <p class="title2">Your message is</p>
+        <p id="resultEncrypt" class="message-result"></p>
+        <p id="resultDecrypt" class="message-result"></p>
+
+        <button id="againButton"style="display: inline;">Again</button>
+        <button id="quitButton" style="display: inline;">Quit</button>
+        </div>
+        
+      </section>
+
+      
+
+    </div>
+
+
+
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

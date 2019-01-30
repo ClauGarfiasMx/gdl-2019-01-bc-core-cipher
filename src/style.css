@@ -1,0 +1,26 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+}
+.title{
+	margin-bottom: .25rem;
+}
+.title2{
+	font-size: 1.5rem;
+}
+button {
+	display: block;
+	margin: 2rem auto;
+}
+
+input.key{
+	width: 50px;
+}
+
+input.message-input{
+	height: 100px;
+}
+#choosScreen
