@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Caesar Cipher</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div id="root">
+
+      <!--COMIENZA EL CÓDIGO DE CLAUDIA--->
+      <div id="container" class="container">
+    
+      <header id="logo-box" class="logo-box"> <!-- contenedor del logotipo --->
+        <h1 >MathBits for Kids!</h1><p>V 0.1</p>
+      </header>
+
+      	<div id="section-container" class="section-container">
+      		<section id="explanationScreen" class="screen"> <!-- contenedor de pantalla 1 CHOOSE --->
+		       <p class="header2">What is Caesar Cipher?</p>
+		       <img src="media/caesar-logo.png" class="logo-img">
+		        <p>¿Alguna vez has jugado a enviar mensajes secretos a tus amigos?<br>Cifrar o encriptar un mensaje para que nadie más que los implicados puedan leerlo es divertido.<br>En el pasado era común que las tropas de los ejércitos en guerra se comunicaran usando mensajes cifrados.<br><strong>Julio César</strong>, un famoso general romano, inventó un método para cifrar mensajes que lleva su nombre:
+		        <p class="header2">"Caesar Cipher"</p>
+		        <p>Consiste en tomar una letra del alfabeto y sustituirla por otra desplazándola de su lugar un número concreto de posiciones.<br>Por ejemplo, si quisieras cifrar la letra "A", desplazándola 3 posiciones a la derecha, el resultado sería la letra "D".<br><br><p class="header2">So, the word "<strong>HELLO</strong>" would be written like "<strong>KHOOR</strong>"</p>.<br>A simple vista el mensaje no sería legible para alguien que no supiera la "clave" o "llave", esto es, el numero de posiciones que deben correrse las letras.</p><br>Esto funcionaba aún mejor en la Roma antigua porque mucha gente no sabía leer, incluyendo los enemigos de Julio César. Actualmente el cifrado de mensajes es muy importante para aplicaciones como mensajería de texto, movimientos bancarios y generación de contraseñas.Pero el Cifrado César ya no se usa mucho porque es sencillo para los expertos decifrarlo.<br>Pero ¡puede ser divertido para enviar mensajes cifrados a tus amigos! ¿por qué no intentas cifrar un mensaje usando lápiz y papel? No olvides sumar las posiciones comenzando desde la letra inmediata siguiente. Por ejemplo si tu letra es la "B" y debes desplazarla 5 posiciones, comenzar contando desde el 1 a partir de la letra inmediata siguiente, que es la "C". ¿Cuál fue tu resultado?<br>Después de cifrar tu mensaje, puedes comprobar si tu código fue correcto usando la siguiente aplicación:<br><br><p class="header2">Have fun and learn!</p></p>
+
+		        <input type="button" id="startApp" value="go to the app!">
+	      	</section>      
+
+	      	<section id="chooseScreen" class="screen" hidden> <!-- contenedor de pantalla 1 CHOOSE --->
+		        <p class="header2">EnkryptApp allows you to easily code and decode your private messages</p>
+		        <p class="header3">I want to:</p>
+		        <input type="button" id="chooseEncrypt" value="encrypt"> <!---boton de encriptar que oculta pantalla chooseScreen y pasa a pantalla encryptScreen-->
+		        <input type="button" id="chooseDecrypt" value="decrypt"> <!---botón de desencriptar que oculta la chooseScreen y pasa a la decryptScreen---->
+	      	</section>
+
+	      	<section id="encryptScreen" class="screen" hidden> <!-- contenedor de pantalla 2-1 ENCRYPT --->
+		        <p class="header2">Encrypting...</p>
+		        <p>Type or paste your message</p>
+		        <input type="text" id="messageEncrypt" class="message-input"><!--string que se va a descifrar--->
+		        <p>Type the key</p>
+		        <input id="keyEncrypt" class="key">
+		        <input type="button" id="encryptButton" value="Encrypt">
+	      	</section>
+
+	      	<section id="decryptScreen" class="screen" hidden> <!-- contenedor de pantalla 2-2 DECRYPT --->
+		        <p class="header2">Decrypting...</p>
+		        <p>Type the key</p>
+		        <input type="text" id="keyDecrypt" class="key">
+		        <p>Type or paste your message</p>
+		        <input id="messageDecrypt" class="message-input">
+		        <input type="button" id="decryptButton" value="Decrypt">
+	      	</section>
+
+	      	<section id="outputScreen" class="screen" hidden> <!-- contenedor de pantalla 3 RESULT --->
+		        <div id="resultBox">
+		        	<p>El resultado es:</p>
+			        <p class="header2">Your message is</p>
+			        <p id="resultEncrypt" class="message-result"></p>
+			        <p id="resultDecrypt" class="message-result"></p>
+
+			        <input type="button" id="againButton" value="Again">
+			        <input type="button" id="quitButton" value="Quit">
+	        	</div>
+	      	</section>
+  		</div>
+    </div>
+    <!---TERMINA EL CÓDIGO DE CLAUDIA--->
+
+
+
+    </div>
+    <script src="cipher.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

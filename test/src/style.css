@@ -1,0 +1,34 @@
+*, *:before, *:after {
+	-webkit-box-sizing: border-box; 
+	-moz-box-sizing: border-box; 
+	box-sizing: border-box;
+	font-family: 'Nunito', sans-serif;
+	text-align: center;
+}
+.section-container{
+	margin: auto 20%;
+}
+
+.logo-img{
+	width: 15rem;
+	margin: auto;
+}
+h1{
+	font-size: 2.25rem;
+}
+.header2{
+	font-size: 1.5rem;
+}
+/*button {
+	display: block;
+	margin: 2rem auto;
+}*/
+
+input.key{
+	width: 50px;
+}
+
+input.message-input{
+	height: 100px;
+}
+#choosScreen
