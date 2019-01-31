@@ -19,43 +19,41 @@
       <section id="chooseScreen" class="screen"> <!-- contenedor de pantalla 1 CHOOSE --->
         <p class="site-description">EnkryptApp allows you to easily code and decode your private messages</p>
         <p class="title2">I want to:</p>
-        <button id="chooseEncrypt">encrypt</button> <!---boton de encriptar que oculta pantalla 1 y pasa a pantalla 2-->
-        <button id="chooseDecrypt">decrypt</button>
+        <input type="button" id="chooseEncrypt" value="encrypt"> <!---boton de encriptar que oculta pantalla chooseScreen y pasa a pantalla encryptScreen-->
+        <input type="button" id="chooseDecrypt" value="decrypt"> <!---botón de desencriptar que oculta la chooseScreen y pasa a la decryptScreen---->
       </section>
 
-      <section id="encryptScreen" class="screen" style="background-color: #eff1f2"> <!-- contenedor de pantalla 2-1 ENCRYPT --->
+      <section id="encryptScreen" class="screen" hidden> <!-- contenedor de pantalla 2-1 ENCRYPT --->
         <p class="title2">Encrypting...</p>
         <p>Type or paste your message</p>
         <input type="text" id="messageEncrypt" class="message-input"><!--string que se va a descifrar--->
         <p>Type the key</p>
         <input id="keyEncrypt" class="key">
-        <button id="encryptButton" onclick="encodeBttn()">Encrypt</button>
+        <input type="button" id="encryptButton" value="Encrypt">
       </section>
 
-      <section id="decryptScreen" class="screen"> <!-- contenedor de pantalla 2-2 DECRYPT --->
+      <section id="decryptScreen" class="screen" hidden> <!-- contenedor de pantalla 2-2 DECRYPT --->
         <p class="title2">Decrypting...</p>
         <p>Type the key</p>
         <input type="text" id="keyDecrypt" class="key">
         <p>Type or paste your message</p>
         <input id="messageDecrypt" class="message-input">
-        <button id="decryptButton" onclick="decodeBttn()">Decrypt</button>
+        <input type="button" id="decryptButton" value="Decrypt">
       </section>
 
-      <section id="outputScreen" class="screen" style="background-color: #eff1f2"> <!-- contenedor de pantalla 3 RESULT --->
+      <section id="outputScreen" class="screen" hidden> <!-- contenedor de pantalla 3 RESULT --->
         <div><p>El resultado es:</p>
         <p class="title2">Your message is</p>
         <p id="resultEncrypt" class="message-result"></p>
         <p id="resultDecrypt" class="message-result"></p>
 
-        <button id="againButton"style="display: inline;">Again</button>
-        <button id="quitButton" style="display: inline;">Quit</button>
+        <input type="button" id="againButton" value="Again">
+        <input type="button" id="quitButton" value="Quit">
         </div>
         
       </section>
-
-      
-
     </div>
+    <!---TERMINA EL CÓDIGO DE CLAUDIA--->
 
 
 
