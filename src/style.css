@@ -5,16 +5,24 @@
 	font-family: 'Nunito', sans-serif;
 	text-align: center;
 }
-.title{
-	margin-bottom: .25rem;
+.section-container{
+	margin: auto 20%;
 }
-.title2{
+
+.logo-img{
+	width: 15rem;
+	margin: auto;
+}
+h1{
+	font-size: 2.25rem;
+}
+.header2{
 	font-size: 1.5rem;
 }
-button {
+/*button {
 	display: block;
 	margin: 2rem auto;
-}
+}*/
 
 input.key{
 	width: 50px;

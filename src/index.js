@@ -23,6 +23,13 @@ const  decodeBttn = () => {
 };
 document.getElementById('decryptButton').addEventListener('click',decodeBttn);
 
+const startApp = document.getElementById('startApp');
+startApp.addEventListener('click'	, () => {
+	const explanationScreen = document.querySelector('#explanationScreen');
+	explanationScreen.style.display = 'none';
+	const showChoose = document.querySelector('#chooseScreen');
+	showChoose.style.display = 'block';
+	});
 
 const btnEncrypt = document.getElementById('chooseEncrypt');
 btnEncrypt.addEventListener('click'	, () => {
