@@ -1,9 +1,9 @@
 # Caesar Cipher v 0.1
----
-permalink: /index.html
----
 **LINKS TO PROJECT**:
+
+
   [![N|Solid](https://claudiagarfias.works/laboratoria/caesarcipher/media/caesar-logo50px.png)github pages](https://daphnemx.github.io/gdl-2019-01-bc-core-cipher/src/index.html)
+
 
   [![N|Solid](https://claudiagarfias.works/laboratoria/caesarcipher/media/caesar-logo50px.png)claudiagarfias.works](https://claudiagarfias.works/laboratoria/caesarcipher)
 

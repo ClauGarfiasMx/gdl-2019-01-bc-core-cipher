@@ -1,0 +1,85 @@
+[33mcommit 3bffb4d7b3253bb1c22023318dfe8d3098f400b6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Wed Feb 6 14:22:30 2019 -0600
+
+    Ligeras modificaciones finales al README
+
+[33mcommit fbb4114ae3c8fe290d2056b553aaab49515471ce[m[33m ([m[1;31morigin/v0,4[m[33m, [m[1;32mv0,4[m[33m)[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Wed Feb 6 13:33:50 2019 -0600
+
+    CSS previo, necesita modificaciones, README listo, lo revisó Juan, ya podemos pasar a HACKER EDITION!!!👏👏👏
+
+[33mcommit dad223650edb98aae20b2f745c0ed782079b01e7[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Sun Feb 3 14:34:19 2019 -0600
+
+    A esta versión 0,4 solamente le falta editar el readme y la función para saltar los espacios en los input-messages y así poder encode y decode frases en lugar de sólo palabras
+
+[33mcommit 80252d9d8f3b0501f1f61f49f1b26d7ef81d715c[m[33m ([m[1;31morigin/v0,3[m[33m, [m[1;32mv0,3[m[33m)[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Thu Jan 31 17:44:11 2019 -0600
+
+    Archivos actualizados
+
+[33mcommit 522690f2b378d38ed31bf5ddcf14ea1c2e65bfc0[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Thu Jan 31 17:30:26 2019 -0600
+
+    Branch creada para añadir la parte de explicación de la funcionalidad para el usuario y para trabajar en el style.css, también la web cambió al título "MathBits for Kids
+
+[33mcommit 8ab31b0aa949c622022dbc3889b5c3c483aca2e0[m[33m ([m[1;31morigin/v0,2[m[33m, [m[1;32mv0,2[m[33m)[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Thu Jan 31 13:28:49 2019 -0600
+
+    Todas las pruebas npm han pasado 👍  y todos los botones están funcionales excepto el de "quit" debido a revisión del index.html, aún no se determina su dirección
+
+[33mcommit 5883a154f64eaf6403c656db397931ad477c1f1f[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Wed Jan 30 16:48:42 2019 -0600
+
+    Los métodos encode y decode de este branch pasaron los npm test, únicamente funcionan los botones de cifrar y descifrar, lo que significa que los métodos cipher.encode y cipher.decode son completamente funcionales 👏👩‍💻🙌
+
+[33mcommit c47d457fe36bb1b07ddce5fa4d644fe6ce8ad0ac[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Wed Jan 30 15:15:12 2019 -0600
+
+    Los archivos ya tienen el código de la v 0,1
+
+[33mcommit c044d9b8f463924d81f45f65dd3ef6cf74f2c193[m
+Author: Laboratoria <me@claudiagarfias.works>
+Date:   Tue Jan 29 11:55:22 2019 -0600
+
+    Agregué un nuevo archivo con la estructura de mi programa, llamado "index0-1.html" en la carpeta src, solamente para comprobar lo aprendido en el taller de git con Juan 👍
+
+[33mcommit 28fa11adb75bd9505c9913e2d171fe3124ce3451[m
+Author: Juan La Jara <wxomb@99.200-57-1.bestel.com.mx>
+Date:   Wed Jan 16 12:41:46 2019 -0600
+
+    Sobrecarga reglas de eslint
+    
+    Deberíamos permitir el uso de console statements para fomentar
+    el debugging.
+    
+    Deberíamos fomentar el uso de semicolons con el objetivo de
+    generar un poco de disciplina al momento de escribir statements.
+
+[33mcommit d2814bbe69d8469dbc9294d2a6858432e2e88d87[m
+Author: Juan La Jara <wxomb@99.200-57-1.bestel.com.mx>
+Date:   Tue Jan 15 10:50:02 2019 -0600
+
+    Impide que tests fallados muestren error de stdout
+    
+    Mocha tiene la característica de mostrar un error de stdout
+    si algún test falló.
+    
+    La idea es no mostrar ruido a las personas que estan en proceso
+    de aprendizaje, este commit arregla eso.
+    
+    más info: https://docs.npmjs.com/misc/config#loglevel
+
+[33mcommit a049c335a9e369614103e12bd04852abf06290a9[m
+Author: Juan La Jara <wxomb@99.200-57-1.bestel.com.mx>
+Date:   Mon Jan 14 17:38:17 2019 -0600
+
+    Primer commit
