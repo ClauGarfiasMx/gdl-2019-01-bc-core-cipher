@@ -1,7 +1,14 @@
 # Caesar Cipher v 0.1
+---
+permalink: /index.html
+---
+**LINKS TO PROJECT**:
+  [![N|Solid](https://claudiagarfias.works/laboratoria/caesarcipher/media/caesar-logo50px.png)github pages](https://daphnemx.github.io/gdl-2019-01-bc-core-cipher/src/index.html)
+
+  [![N|Solid](https://claudiagarfias.works/laboratoria/caesarcipher/media/caesar-logo50px.png)claudiagarfias.works](https://claudiagarfias.works/laboratoria/caesarcipher)
 
 
-[![N|Solid](https://claudiagarfias.works/laboratoria/caesarcipher/media/caesar-logo50px.png)](https://claudiagarfias.works/laboratoria/caesarcipher) See live Site!
+ 
 
 ## Math Bits for Kids: What is Caesar Cipher?
 
@@ -40,7 +47,10 @@ Just click this link ["link"](http://claudiagarfias.works/) and start learning. 
 
 
 ## Always have fun and learn!
- ![caesar](https://claudiagarfias.works/laboratoria/caesarcipher/media/caesar-logo.png =180x180)
 
 
+<p align="center">
+  <img src="https://claudiagarfias.works/laboratoria/caesarcipher/media/caesar-logo180px.png">
+</p>
+ 
 
