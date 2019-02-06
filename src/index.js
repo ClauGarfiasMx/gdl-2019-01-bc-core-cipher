@@ -1,8 +1,8 @@
 
-const startApp = document.getElementById('startApp');
-	startApp.addEventListener('click'	, () => {
-	location.replace('app.html');
-});
+// const startApp = document.getElementById('startApp');
+// 	startApp.addEventListener('click'	, () => {
+// 	location.replace('app.html');
+// });
 
 //APRENDIZAJE DE querySelector
 //la siguiente forma de programar botones usa querySelector, como todavía no descubro la diferencia 
