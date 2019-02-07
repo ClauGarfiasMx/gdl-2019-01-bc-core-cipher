@@ -40,7 +40,7 @@ The web app uses a math formula, the next video explains the process to get the 
 
 ## Instructions for use 
 
-Just click this link ["link"](http://claudiagarfias.works/) and start learning. And remember to...
+Just click this [link](https://daphnemx.github.io/gdl-2019-01-bc-core-cipher/src/index.html) and start learning. And remember to...
 
 
 
