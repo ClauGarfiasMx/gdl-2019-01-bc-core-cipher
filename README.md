@@ -33,7 +33,7 @@ Although the site it's meant to be visited for adults and kids, the UX is mainly
 
 **The problem the app tries to solve** is boring math learning in the classroom by involving students in active, interactive learning activities.
 
-## Problem solving
+## How it works
 The web app uses a math formula, the next video explains the process to get the result (that is, how the app works):
 
 [![caesar cipher michelle](https://img.youtube.com/vi/zd8eVrXhs7Y/0.jpg)](https://www.youtube.com/watch?v=zd8eVrXhs7Y)
