@@ -2,61 +2,69 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>What is Caesar Cipher?</title>
     <link rel="stylesheet" href="style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter%7CSarabun:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400%7CDelius+Unicase:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="media/font-awesome/css/font-awesome.min.css">
   </head>
   <body>
-    <div id="root">
-      <!--COMIENZA EL CÓDIGO DE CLAUDIA-->
-      
-    
-      <header id="logo-box" class="logo-box"> <!-- contenedor del logotipo -->
-        <h1 >Math Bits For Kids</h1><!-- <p>V 0.1</p> -->
-      </header>
+      <header>           
+          <nav class="nav">
+            <div id="logo-box"><a href="index.html"><img src="media/logomath.png" alt="logo"></a> </div>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">ES Activities</a></li>
+              <li><a href="#">MS Activities</a></li>
+              <li><a href="#">Teacher's Room</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><input><i class="fa fa-search"></i></li>
+              <li></li>
+            </ul>
+          </nav>
+        </header>
+    <div id="root"> 
 
-      	<div id="div-container" class="div-container">
+      	<div class="div-container">
+
       		<input type="button" id="startApp" value="go to the app!" hidden>
 	      	
 	      	<div id="chooseScreen" class="screen" > <!-- contenedor de pantalla 1 CHOOSE -->
-		        <p>EnkryptApp allows you to easily code and decode your private messages</p>
+		        <p><span class="header4">EnkryptApp</span> allows you to easily code and decode your private messages</p>
 		        <p class="header2">I want to:</p>
 		        <input type="button" id="chooseEncrypt" value="Encrypt" class="button" > <!--boton de encriptar que oculta pantalla chooseScreen y pasa a pantalla encryptScreen-->
 		        <input type="button" id="chooseDecrypt" value="Decrypt" class="button"> <!--botón de desencriptar que oculta la chooseScreen y pasa a la decryptScreen-->
 	      	</div>
 
 	      	<div id="encryptScreen" class="screen" hidden> <!-- contenedor de pantalla 2-1 ENCRYPT -->
-		        <p class="header3">Encrypting...</p>
-		        <p>Type or paste your message</p>
+		        <p class="header3animated">Encrypting...</p>
+		        <p>Type your message</p>
 		        <input type="text" id="messageEncrypt" class="message-input"><!--string que se va a descifrar-->
-		        <p>Type the key (USE NUMBERS PLEASE!)</p>
+		        <p>Type the key:</p>
 		        <input id="keyEncrypt" class="key"><br>
 		        <input type="button" id="encryptButton" value="Encrypt" class="button">
 	      	</div>
 
 	      	<div id="decryptScreen" class="screen" hidden> <!-- contenedor de pantalla 2-2 DECRYPT -->
-		        <p class="header3">Decrypting...</p>
-		        <p>Type the key USE NUMBERS PLEASE!</p>
+		        <p class="header3animated">Decrypting...</p>
+		        <p>Type the key:</p>
 		        <input type="text" id="keyDecrypt" class="key">
-		        <p>Type or paste your message</p>
+		        <p>Type your message</p>
 		        <input id="messageDecrypt" class="message-input"><br>
 		        <input type="button" id="decryptButton" value="Decrypt" class="button">
 	      	</div>
 
 	      	<div id="outputScreen" class="screen" hidden> <!-- contenedor de pantalla 3 RESULT -->
 		        <div id="resultBox">
-		        	<p>Your message:</p>
-			        <p class="header2">Your message is</p>
-			        <p id="resultEncrypt" class="message-result"></p>
-			        <p id="resultDecrypt" class="message-result"></p>
+		        	<p>Your message is:</p>
+			        <p id="resultEncrypt" class="header4"></p>
+			        <p id="resultDecrypt" class="header4"></p>
 
 			        <input type="button" id="againButton" value="Again" class="button">
 			        <input type="button" id="quitButton" value="Quit" class="button">
 	        	</div>
 	      	</div>
   		</div>
-      
-      <!--TERMINA EL CÓDIGO DE CLAUDIA-->
      </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
