@@ -15,7 +15,7 @@ const encode = (offset,string) => { // ARGUMENTOS
 		}
 
 		else if (charIdx >= 97 && charIdx <= 122){ //CIFRA MINÚSCULAS
-		let charCiph = (charIdx - 97 + offset) % 6 + 97;
+		let charCiph = (charIdx - 97 + offset) % 26 + 97;
 		stringCiph.push(String.fromCharCode(charCiph));
 
 		}
@@ -45,7 +45,7 @@ const decode = (offset,string) => { // ARGUMENTOS
 		let charDeci = (charIdx + 65 - offset) % 26 + 65;
 		stringDeci.push(String.fromCharCode(charDeci));
 		}
-
+	
 		else if(charIdx >= 97 && charIdx <= 122){//DESCIFRA MINÚSCULAS
 			let charDeci = (charIdx + 59 - offset) % 26 + 97;
 			stringDeci.push(String.fromCharCode(charDeci));

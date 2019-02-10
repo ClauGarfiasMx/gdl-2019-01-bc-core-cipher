@@ -59,19 +59,17 @@ nav ul li a {
 }
 
 nav ul li input {
-	max-width: 90px;
-	border: 3px solid #ffff;
+	font-family: 'FontAwesome';
+	color: #ffff;
+	font-size: 1.5rem;	
+	text-align: right;
+	max-width: 100px;
+	border: none;
 	background-color: #FFFFFF99;
 	border-radius: 10px;
 	height: 40px;
 	margin-top:5px;
-}
-
-nav ul li i.fa{
-	color: #ffff;
-	margin-left: .25rem;
-	font-size: 1.5rem;
-	margin-top:10px;
+	padding-right: 3px;
 }
 
 nav ul li a:hover,
@@ -92,10 +90,11 @@ nav ul li ul li a:focus {
 .div-container{
 	padding: 3% 25%;
 }
-
-.section-container {
-	margin: auto 1.5rem;
-	padding: 0 7.5rem;
+.explanation {
+	background-color: #FFFFFFCC;
+	padding: 1rem;
+	border-radius: 6%;
+	margin-top: .5rem;
 }
 
 img {
@@ -103,8 +102,14 @@ img {
 	margin: auto;
 }
 
+.logo-container{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
 .logo-img{
-	width: 12rem;
+	width: 8rem;
 	
 }
 
@@ -112,33 +117,31 @@ h1{
 	color: white;
 	font-family: 'Delius Unicase', cursive;
 	font-size: 2.25rem;
-	margin: 0;
-	float: left;
-	position: relative;
+	margin: auto;
 }
 
-.header2{
+.title2{
 	color: #ffffff;
 	font-family: 'Delius Unicase', cursive;
 	font-size: 2rem;
 	font-weight: 600;
 }
 
-.header3{
+.title3{
 	color:#d830a9;
 	font-family: 'Delius Unicase', cursive;
 	font-size: 1.35rem;
 	font-weight: 600;
 }
 
-.header4{
+.title4 {
 	color:#7230d8;
 	font-family: 'Delius Unicase', cursive;
 	font-size: 1.25rem;
 	font-weight: 600;
 }
 
-.header3animated{
+.title3animated {
 	color: white;
 	background-color:#f9b800;
 	border-radius: 10px;
@@ -171,7 +174,11 @@ strong {
 i{
 	font-family: 'Montserrat', sans-serif;
 }
+p.result {
+	font-weight: 400;
+	font-size: 2rem;
 
+}
 #paper-first{
 	max-width: 120px;
 }
@@ -196,6 +203,7 @@ input.button:hover {
 }
 
 input.key{
+	border:2px solid #ffff;
 	border-radius: 15px;
 	width: 50px;
 	height: 35px;

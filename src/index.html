@@ -18,7 +18,7 @@
               <li><a href="#">MS Activities</a></li>
               <li><a href="#">Teacher's Room</a></li>
               <li><a href="#">Contact</a></li>
-              <li><input><i class="fa fa-search"></i></li>
+              <li><input placeholder="&#61442 "></li>
               <li></li>
             </ul>
           </nav>
@@ -26,33 +26,34 @@
     <div id="root">     
 
       	<div class="div-container">
-          
-  		      <div id="explanation1Screen">
-              <p class="header2">What is Caesar Cipher?</p>
-  		        <img class="logo-img" alt="A Julius Caesar logo" src="media/caesar-logo180px.png">
-  		        <p class="header3">Have you ever sent a secret message to a friend?</p><p>To <i>Cipher</i> or <i>Encrypt</i> a message so nobody else can read it is super fun.<br>In the past it was very common that troops from an army communicate each other by encrypted messages, so the enemy can't read them.<br><strong>Julius Caesar</strong>, a famous roman general, created a method to cipher messages called:</p>
-  		        <p class="header3">"Caesar Cipher"</p>
-              <p><span class="header4">Did you know?:</span> Julius Caesar was never an emperor, but a general. The title "Emperor" came to existence only <i>after Caesar died.</i></p>
-              <p> <strong>Caesar Cipher</strong> worked very good in ancient Rome because it was simple, new, and only few people can read!📖.<br>Today, it is easy to decrypt a Caesar Cipher and it is not frequent to use it, unless it is combined with another method, such as <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère Cipher</a>.</p><br>
+          <div class="logo-container">
+            <img class="logo-img" alt="A Julius Caesar logo" src="media/caesar-logo180px.png">
+            <h1>What is Caesar Cipher?</h1>            
+          </div>
+          <div id="explanation1Screen" class="explanation">
+  		        <p class="title3">Have you ever sent a secret message to a friend?</p><p>To <i>Cipher</i> or to <i>Encrypt</i> a message so nobody else can read it is super fun.<br>In the past, it was very common that troops in war communicate each other by encrypted messages, so the enemy can't read them.<br><strong>Julius Caesar</strong>, a famous roman general, created a method to cipher messages called:</p>
+  		        <p class="title3">"Caesar Cipher"</p>
+              <p><span class="title4">Did you know?:</span> Julius Caesar was never an emperor, but a dictator. The title "Emperor" came to existence only <i>after Caesar died.</i></p>
+              <p> <strong>Caesar Cipher</strong> worked very good in ancient Rome because it was simple, new, and only few people can read back then!📖.<br>Today, it is easy to decrypt a Caesar Cipher message and it is not frequent to use it, unless it is combined with another method, such as <a href="https://en.wikipedia.org/wiki/Vigen%C3%A8re_cipher">Vigenère Cipher</a>.</p><br>
               <input type="button" id="explanation1Bttn" value="tell me more!" class="button">
             </div>
 
-            <div id="explanation2Screen" hidden>
+            <div id="explanation2Screen" class="explanation" hidden>
               <p><strong>"Caesar Cipher"</strong> Takes one letter or <i>character</i> from the alphabet and changes it for another by moving it from its place a given number of positions. <br><br>  
               <strong>i.e.</strong> If you want to encrypt letter "<strong>B</strong>" by moving it 3 positions, the result would be "<strong>E</strong>":</p>
                <img src="media/caesar-diagram.png" alt="Caesar Cipher explanation" class="caesar-diagram">
-              <p class="header4">What would be the result if you use this "key" (number 3) to encrypt the  next word?</p><p class="header3">HELLO</p>
+              <p class="title4">What would be the result if you use this "key" (number 3) to encrypt the  next word?</p><p class="title3">HELLO</p>
               <input type="button" id="explanation2Bttn" value="find out!" class="button">
             </div>
 
-            <div id="explanation3Screen" hidden>
+            <div id="explanation3Screen" class="explanation" hidden>
               <p>The correct answer is:</p>
-              <p class="header3">KHOOR</p>
+              <p class="title3">KHOOR</p>
               <p>So, if you see the word<i>"KHOOR"</i> written somewhere, you wouldn't be able to decipher it without <i>context</i> (that is, that you actually know it is a encrypted word with Caesar Cipher method and know the key to decipher it).</p> 
-              <p><span class="header4">Paper it!"</span><strong> Try this:</strong> Encrypt the world "CAESAR", choose your own key. You can download and print the <strong>paper first</strong> worksheet to try it on paper.</p>
+              <p><span class="title4">Paper it!"</span><strong> Try this:</strong> Encrypt the world "CAESAR", choose your own key. You can download and print the <strong>paper first</strong> worksheet to try it on paper.</p>
               <a href="#"><img id = "paper-first" src="media/paper.png" alt="Paper icon"></a>
               <p><strong>After you do the worksheet</strong>, double check your ciphered message using our app. And always remember to:</p>
-               <p class="header3">Have fun and learn!</p>
+               <p class="title3">Have fun and learn!</p>
               <input type="button" id="startApp" value="Go to the app!" class="button">
             </div> 
 
